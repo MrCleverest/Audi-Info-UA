@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Форма підбору автомобілю</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body class="body_form">
+	<script>
+		// Тип кузову
+		let body;
+		// Кількість місць
+		let seats_from;
+		let seats_to;
+		// Об'єм двигуна
+		let volume_from;
+		let volume_to;
+		// Тип приводу
+		let drive;
+		// Бюджет
+		let budget;
+		function coupe(){
+			if(budget.value >= 100000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi R8 Quattro";
+				}
+				else {
+					result.textContent = "Audi R8";
+				}
+				image.innerHTML = '<img src="models/R8.jpg" alt="R8" width="400px">';
+			}
+			else if(budget.value >= 15000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A5 Quattro";
+				}
+				else {
+					result.textContent = "Audi A5";
+				}
+				image.innerHTML = '<img src="models/A5_Coupe.jpg" alt="A5 Coupe" width="400px">';
+			}
+			else if(budget.value >= 10000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi TT Quattro";
+				}
+				else {
+					result.textContent = "Audi TT";
+				}
+				image.innerHTML = '<img src="models/TT_RS.jpg" alt="TT" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";
+			}
+		}
+		function cabrio(){
+			if(budget.value >= 100000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi R8 Cabrio Quattro";
+				}
+				else {
+					result.textContent = "Audi R8 Cabrio";
+				}
+				image.innerHTML = '<img src="models/R8_Cabrio.jpg" alt="R8 Cabrio" width="400px">';
+			}
+			else if(budget.value >= 16000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A5 Cabrio Quattro";
+				}
+				else {
+					result.textContent = "Audi A5 Cabrio";
+				}
+				image.innerHTML = '<img src="models/A5_Cabrio.jpg" alt="A5 Cabrio" width="400px">';
+			}
+			else if(budget.value >= 10000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi TT Cabrio Quattro";
+				}
+				else {
+					result.textContent = "Audi TT Cabrio";
+				}
+				image.innerHTML = '<img src="models/TT_Cabrio.jpg" alt="TT Cabrio" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";
+			}
+		}
+		function hatchback(){
+			if (budget.value >= 12000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A3 Quattro";
+				}
+				else {
+					result.textContent = "Audi A3";
+				}
+				image.innerHTML = '<img src="models/A3.jpg" alt="A3" width="400px">';
+			}
+			else if (budget.value >= 8000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A1 Quattro";
+				}
+				else {
+					result.textContent = "Audi A1";
+				}
+				image.innerHTML = '<img src="models/A1.jpg" alt="A1" width="400px">';
+			}
+			else if (budget.value >= 3000){
+				result.textContent = "Audi A2";
+				image.innerHTML = '<img src="models/A2.jpg" alt="A2" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";a
+			}
+		}
+		function liftback(){
+			if(budget.value >= 20000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A5 Sportback Quattro";
+				}
+				else {
+					result.textContent = "Audi A5 Sportback";
+				}
+				image.innerHTML = '<img src="models/A5.jpg" alt="A5 Sportback" width="400px">';
+			}
+			else if(budget.value >= 14000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A7 Sportback Quattro";
+				}
+				else {
+					result.textContent = "Audi A7 Sportback";
+				}
+				image.innerHTML = '<img src="models/A7.jpg" alt="A7" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";
+			}
+		}
+		function sedan(){
+			if (budget.value >= 26000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A8 Quattro";
+				}
+				else {
+					result.textContent = "Audi A8";
+				}
+				image.innerHTML = '<img src="models/A8.jpg" alt="A8" width="400px">';
+			}
+			else if(budget.value >= 18000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A6 Quattro";
+				}
+				else {
+					result.textContent = "Audi A6";
+				}
+				image.innerHTML = '<img src="models/A6.jpg" alt="A6" width="400px">';
+			}
+			else if(budget.value >= 14000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A4 Quattro";
+				}
+				else {
+					result.textContent = "Audi A4";
+				}
+				image.innerHTML = '<img src="models/A4.jpg" alt="A4" width="400px">';
+			}
+			else if(budget.value >= 12500){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A3 Sportback Quattro";
+				}
+				else {
+					result.textContent = "Audi A3 Sportback";
+				}
+				image.innerHTML = '<img src="models/A3_Sportback.jpg" alt="A3 Sportback" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";
+			}
+		}
+		function wagon(){
+			if(budget.value >= 18000){
+					if(drive.value == "Повний"){
+					result.textContent = "Audi A6 Avant Quattro";
+				}
+				else {
+					result.textContent = "Audi A6 Avant";
+				}
+				image.innerHTML = '<img src="models/A6_Avant.jpg" alt="A6 Avant" width="400px">';
+			}
+			else if(budget.value >= 11500){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi A4 Avant Quattro";
+				}
+				else {
+					result.textContent = "Audi A4 Avant";
+				}
+				image.innerHTML = '<img src="models/A4_Avant.jpg" alt="A4 Avant" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";
+			}
+		}
+		function crossover(){
+			if(budget.value >= 20000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi Q5 Quattro";
+				}
+				else {
+					result.textContent = "Audi Q5";
+				}
+				image.innerHTML = '<img src="models/Q5.jpg" alt="Q5" width="400px">';
+			}
+			else if(budget.value >= 15000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi Q3 Quattro";
+				}
+				else {
+					result.textContent = "Audi Q3";
+				}
+				image.innerHTML = '<img src="models/Q3.jpg" alt="Q3" width="400px">';
+			}
+			else if(budget.value >= 12000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi Q2 Quattro";
+				}
+				else {
+					result.textContent = "Audi Q2";
+				}
+				image.innerHTML = '<img src="models/Q2.jpg" alt="Q2" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";
+			}
+		}
+		function suv(){
+			if(budget.value >= 50000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi Q8 Quattro";
+				}
+				else {
+					result.textContent = "Audi Q8";
+				}
+				image.innerHTML = '<img src="models/Q8.jpg" alt="Q8" width="400px">';
+			}
+			else if(budget.value >= 18000){
+				if(drive.value == "Повний"){
+					result.textContent = "Audi Q7 Quattro";
+				}
+				else {
+					result.textContent = "Audi Q7";
+				}
+				image.innerHTML = '<img src="models/Q7.jpg" alt="Q7" width="400px">';
+			}
+			else {
+				result.textContent = "Автомобілів в такому бюджеті не знайдено!";
+			}
+		}
+		function search(){
+			// Тип кузову
+			body = document.getElementById("body");
+			// Кількість місць
+			seats_from = document.getElementById("seats_from");
+			seats_to = document.getElementById("seats_to");
+			// Об'єм двигуна
+			volume_from = document.getElementById("volume_from");
+			volume_to = document.getElementById("volume_to");
+			// Тип приводу
+			drive = document.getElementById("drive");
+			// Бюджет
+			budget = document.getElementById("budget");
+			// Результат
+			const result = document.getElementById("result");
+			const image = document.getElementById("image");
+			// Купе
+			if(body.value == "Купе" && seats_from.value <= 2) coupe();
+
+			// Кабріолети
+			else if(body.value == "Кабріолет" && seats_from.value <= 5) cabrio();
+
+			// Хетчбеки
+			else if(body.value == "Хетчбек" && seats_from.value <= 5) hatchback();
+
+			// Ліфтбек
+			else if(body.value == "Ліфтбек" && seats_from.value <= 5) liftback();
+
+			// Седани
+			else if(body.value == "Седан" && seats_from.value <= 5) sedan();
+
+			// Універсали
+			else if(body.value == "Універсал" && seats_from.value <= 7) wagon();
+
+			// Кроссовери
+			else if(body.value == "Кроссовер" && seats_from.value <= 7) crossover();
+
+			// Позашляховики
+			else if(body.value == "Позашляховик" && seats_from.value <= 8) suv();
+
+			// Інше
+			else alert("Неправильний кузов!")
+		}
+	</script>
+	<center>
+	<div class="div_form">
+	<h2>Підбір найкращого автомобілю</h2>
+	<fieldset class="fs_form">
+		<legend class="leg_form">Тип кузову</legend>
+		<label>
+		<select name="body" id="body">
+				<option value="Купе">Купе</option>
+				<option value="Кабріолет">Кабріолет</option>
+				<option value="Хетчбек">Хетчбек</option>
+				<option value="Ліфтбек">Ліфтбек</option>
+				<option value="Седан" selected>Седан</option>
+				<option value="Універсал">Універсал</option>
+				<option value="Кроссовер">Кроссовер</option>
+				<option value="Позашляховик">Позашляховик</option>
+			</select>
+		</label>
+	</fieldset>
+	<fieldset class="fs_form">
+		<legend class="leg_form">Кількість місць</legend>
+		<label>
+		<input type="number" placeholder="Від" id="seats_from">
+		<input type="number" placeholder="До" id="seats_to">
+		</label>
+	</fieldset>
+	<fieldset class="fs_form">
+		<legend class="leg_form">Об'єм двигуна</legend>
+		<label>
+		<input type="number" placeholder="Від" id="volume_from">
+		<input type="number" placeholder="До" id="volume_to">
+		</label>
+	</fieldset>
+	<fieldset class="fs_form">
+		<legend class="leg_form">Тип приводу</legend>
+		<label>
+		<select name="drive" id="drive">
+			<option value="Передній">Передній</option>
+			<option value="Повний">Повний</option>
+			<option value="Задній">Задній</option>
+		</select>
+		</label>
+	</fieldset>
+	<fieldset class="fs_form">
+		<legend class="leg_form">Бюджет</legend>
+		<label>
+		<input type="number" placeholder="Сума $" id="budget">
+		</label>
+	</fieldset>
+	<button type="button" onclick="search()" class="btn_form">Підбір</button>
+	<p id="result" class="p_form"></p>
+	<p id="image" class="p_form"></p>
+	</div>
+	</center>
+</body>
+</html>

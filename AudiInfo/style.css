@@ -1,0 +1,426 @@
+/* << Головна >> */
+.header_main {
+	position: absolute;
+	display: flex;
+  	align-items: center;
+  	justify-content: right;
+	width: 98%;
+	height: 10%;
+	z-index: 1;
+}
+.main {
+	position: static;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	width: 101.1%;
+	max-height: 1200px;
+	margin: -10px;
+	margin-top: 13px;
+	margin-bottom: 18px;
+}
+footer {
+	position: static;
+	text-align: center;
+	width: 97.21%;
+	height: 220px;
+	margin: -10px;
+	padding: 30px;
+	border-top: 1px solid black;
+	background-color: #e3e3e3;
+}
+.post {
+	margin: -10px;
+	position: relative;
+	width: 101.2%;
+	z-index: 0;
+}
+.ad {
+	margin: 10px;
+	min-width:450px;
+	width: 450px;
+	height: 380px;
+	border: 2px solid black;
+	border-radius: 2px;
+}
+.img_ad {
+	display: inline-block;
+	width: 100%;
+	height: 250px;
+}
+.p_ad {
+	font-size: 20px;
+	font-family: Helvetica;
+	margin-left: 20px;
+}
+.a {
+	text-decoration: none;
+}
+.cont {
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.cont1 {
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.logo {
+	width: 170px;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+.logo1 {
+	width: 170px;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+.icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+.btn_head {
+	display: inline-block;
+	background-color: rgba(28,28,28,0);
+	cursor: pointer;
+    color: black;
+    border: 0px;
+    font-size: 30px;
+  	font-weight: bold;
+    font-family: Helvetica;
+    margin: 10px;
+    padding: 1% 3%;
+    transition: all 0.8s ease;
+}
+.btn_head:hover {
+    color: silver;
+    border-bottom: 3px solid black;
+    border-color: black;
+}
+/* << Моделі >> */
+.body_mdl {
+	position: static;
+	top: 120px;
+	width: 101.1%;
+	margin: -10px;
+	margin-top: 30px;
+}
+.footmod {
+	position: static;
+	text-align: center;
+	width: 97.21%;
+	height: 220px;
+	margin: -10px;
+	padding: 30px;
+	border-top: 1px solid black;
+	background-color: #e3e3e3;
+	margin-top: 10px;
+}
+.a_mdl {
+	color: black;
+	text-decoration: none;
+}
+.h2_mdl {
+	text-align: center;
+	font-size: 40px;
+	font-family: Helvetica;
+}
+.h2_model {
+	margin-left: 40px;
+	font-size: 40px;
+	font-family: Helvetica;
+}
+.txt_mdl {
+	text-align: center;
+	font-size: 30px;
+	font-family: Helvetica;
+}
+.hr_mdl {
+	margin-top: -20px;
+}
+.div_mdl {
+	display: inline-block;
+	text-align: center;
+	margin: 32px;
+	width: 310px;
+	height: 310px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+.img_mdl {
+	width: 100%;
+	height: 207px;
+}
+/* << Підбір >> */
+.body_search {
+	position: relative;
+	top: 120px;
+	width: 101.1%;
+	height: 1100px;
+	max-height: 2000px;
+	margin: -10px;
+	margin-top: -130px;
+}
+iframe {
+	width: 99.91%;
+	height: 986px;
+}
+
+/* Форма */
+.body_form {
+	background-color: DimGrey;
+	background-image: url("images/q8.jpg");
+	background-size: 110%;
+	background-repeat: no-repeat;
+}
+.div_form {
+	height: 950px;
+	width: 450px;
+	opacity: 0.95;
+	background-color: white;
+	padding: 10px;
+}
+.fs_form {
+	width: 300px;
+	margin: 20px;
+}
+.btn_form {
+  	width: 200px;
+  	height: 50px;
+  	color: black;
+  	border-radius: 5px;
+  	padding: 10px 25px;
+  	font-size: 20px;
+  	font-family: 'Lato', sans-serif;
+  	font-weight: bold;
+  	cursor: pointer;
+  	background: GreenYellow;
+}
+.leg_form {
+	font-size: 17px;
+	font-family: Vollkorn;
+}
+.p_form {
+	font-size: 22px;
+	font-family: Vollkorn;
+}
+
+/* << Про бренд >> */
+.body_about {
+	position: static;
+	top: 120px;
+	width: 96%;
+	margin: 40px;
+}
+.block_about {
+	text-align: center;
+}
+.p_about {
+	font-size: 25px;
+	font-family: Helvetica;
+}
+.img_about {
+	min-width: 300px;
+	width: 40%; 
+	margin: 40px;
+	border: 1px solid black;
+}
+.bild {
+	float: left;
+	width: 250px; 
+	height: 230px;
+	margin: 40px;
+	margin-top: 10px;
+	border: 1px solid black;
+}
+.ofice {
+	float: right;
+	width: 400px; 
+	margin: 40px;
+	margin-top: -5px;
+	border: 1px solid black;
+}
+
+/* << Автоспорт >> */
+.body_sport {
+	position: static;
+	top: 120px;
+	width: 101.1%;
+	margin: -10px;
+	margin-top: 13px;
+}
+.postsport {
+	width: 100.1%;
+}
+.tbl_sport {
+	width: 100%;
+}
+.td_sport {
+	width: 50%;
+	padding: 20px;
+}
+.img_sport {
+	width: 90%;
+}
+.h2_sport {
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+.h3_sport {
+	text-align: center;
+	font-size: 25px;
+	font-family: Helvetica;
+}
+.h5_sport {
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 23px;
+	font-family: Helvetica;
+}
+.p_sport {
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 20px;
+	font-family: Helvetica;
+}
+
+/* << Контакти >> */
+.contacts {
+	position: static;
+	width: 101.1%;
+	min-height: 730px;
+	max-height: 1700px;
+	margin: -10px;
+	margin-top: 50px;
+}
+.con {
+	width: 50%;
+}	
+.maps {
+	width:100%;
+	border-radius: 10px;
+}
+h1 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+.h3_con {
+	font-size: 25px;
+	text-decoration: underline;
+	font-family: Helvetica;
+}
+.p_con {
+	font-size: 20px;
+	font-family: Helvetica;
+}
+.right {
+	position: absolute;
+	right: 10px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	width: 50%;
+	height: 600px;
+	padding: 20px;
+}
+.left {
+	position: absolute;
+	left: 10px;
+  	text-align: center;
+  	align-items: center;
+	width: 45%;
+	height: 600px;
+	padding: 20px;
+}
+.time {
+	text-align: center;
+	width: 100%;
+	margin: 10px;
+	margin-top: -20px;
+	padding: 20px;
+	font-size: 20px;
+	font-family: Helvetica;
+}
+.tdleft {
+	padding-top: 4px;
+	padding-left: 15px;
+	text-align: left;
+}
+.tdright {
+	padding-top: 4px;
+	padding-right: 15px;
+	text-align: right;
+}
+/* Загальне */
+.header {
+	position: static;
+	display: flex;
+	flex-wrap: wrap;
+  	align-items: center;
+  	justify-content: right;
+  	border-bottom: 2px solid black;
+  	padding-bottom: 20px;
+	width: 98%;
+	height: 10%;
+	z-index: 1;
+}
+.btn {
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 1% 3%;
+    transition: all 0.8s ease;
+}
+.btn:hover {
+    background-color: silver;
+    color: #ffeded;
+    border-color: #006089;
+}
+
+@media (max-width: 1000px) {
+  .btn {
+  	text-align: center;
+  	text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 150px;
+    transition: all 0.8s ease;
+  }
+  .header {
+  	display: flex;
+  	justify-content: center;
+  }
+  .btn_head {
+  	font-size: 10px;
+  }
+  .cont1 {
+  	width: 30px;
+  	height: auto;
+  }
+  .logo1 {
+	width: 100px;
+  	height: auto;
+  }
+}
